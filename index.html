@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+let num1 = 9;
+let num2 = 6;
+let sum = 0;
+let difference = 0;
+let multiply1 = 0;
+let quotient1 = 0;
+let power1 = 0;
+
+
+function plus() {
+    sum = num1 + num2;
+    document.getElementById("result").innerHTML = "the sum is: " + sum;
+};
+
+function minus() {
+    difference = num1 - num2;
+    document.getElementById("result").innerHTML = "the difference is: " + difference;
+};
+
+function multiply() {
+    multiply1 = num1 * num2;
+    document.getElementById("result").innerHTML = "the multiply is: " + multiply1;
+};
+
+function quotient() {
+    quotient1 = num1 / num2;
+    document.getElementById("result").innerHTML = "the quotient is: " + quotient1;
+};
+
+function power() {
+    power1 = num1 ** num2;
+    document.getElementById("result").innerHTML = "9 to the power 6 equals: " + power1;
+};
+
+function root() {
+    power1 = num1 ** num2 ** -1;
+    document.getElementById("result").innerHTML = "root of 9 to the 6th power: " + power1;
+};
+    </script>
+
+    <style>
+        .op_button {
+    box-shadow: 3px 3px lightslategray;
+    display: block;
+    line-height: 1.2;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.op_button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+    </style>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<h1><strong>num1 = 9 num2 = 6</strong></h1>
+
+<h3 id="result">_</h3>
+
+<button onclick="plus()" class="op_button" > + </button>
+<br>
+<button onclick="minus()" class="op_button"> - </button>
+<br>
+<button onclick="multiply()" class="op_button"> * </button>
+<br>
+<button onclick="quotient()" class="op_button"> / </button>
+<br>
+<button onclick="power()" class="op_button"> ^ </button>
+<br>
+<button onclick="root()" class="op_button"> √ </button>
+
+</body>
+</html>
